@@ -11,5 +11,5 @@ def read_json(file_path: str) -> Any:
 
 
 def custom_function(x: float) -> float:
-    # return math.exp(x) + 3
-    return math.cos(x) + 3
+    return x ** (1 / 2) + x ** 3
+    # return math.tan(x) / 2 + math.exp(2 * x)
