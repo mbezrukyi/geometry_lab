@@ -146,6 +146,8 @@ class Plot(FigureCanvas):
     def plot(self, xs: List[float], ys: List[float], *calculators: Calculator) -> None:
         self.clear()
 
+        self._ax.set_title('tg(x) + e^(2x)')
+
         self._ax.scatter(xs, ys)
 
         for calculator in calculators:
